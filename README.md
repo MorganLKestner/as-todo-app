@@ -8,8 +8,7 @@ https://www.sitepoint.com/angular-2-tutorial/#comment-2918636905
  ** notes from the comments on the tutorial **
  *********************************************
 I've just tested this using Node v6.2 and can confirm that with a couple of minor changes, it should work as expected.
-- git clone git@github.com:sitepoint-editors/angular2-todo-app.git
-- cd angular2-todo-app
+- cd <your todo app>
 - npm install
 - npm install -g typings
 - typings install
