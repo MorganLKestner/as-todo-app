@@ -8,3 +8,8 @@ export class Todo {
     }
 
 }
+
+let todo = new Todo({
+  title: 'Read SitePoint article',
+  complete: false
+});
