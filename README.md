@@ -2,6 +2,22 @@
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.18.
 
+## Tutorial 
+### This is the tutorial I followed along with the edits below - 
+https://www.sitepoint.com/angular-2-tutorial/#comment-2918636905
+ ** notes from the comments on the tutorial **
+ *********************************************
+I've just tested this using Node v6.2 and can confirm that with a couple of minor changes, it should work as expected.
+git clone git@github.com:sitepoint-editors/angular2-todo-app.git
+cd angular2-todo-app
+npm install
+npm install -g typings
+typings install
+Then edit line 39 of src/app/todo.service.ts and line 8 of src/app/todo.ts 
+changing Object.assign(this, values); 
+to (<any>Object).assign(this, values);
+After which the code should run as expected.
+
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
