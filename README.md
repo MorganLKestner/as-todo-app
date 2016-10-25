@@ -16,6 +16,14 @@ I've just tested this using Node v6.2 and can confirm that with a couple of mino
 - changing Object.assign(this, values); 
 - to (<any>Object).assign(this, values);
 - After which the code should run as expected.
+ *********************************************
+** continual notes since there are updated issues that happen **
+    <code>
+    import { TestBed, async, inject } from '@angular/core/testing';
+    import  { Todo } from './todo';
+    import { TodoService } from './todo.service';
+    </code>
+
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
