@@ -16,13 +16,26 @@ I've just tested this using Node v6.2 and can confirm that with a couple of mino
 - changing Object.assign(this, values); 
 - to (<any>Object).assign(this, values);
 - After which the code should run as expected.
- *********************************************
-** continual notes since there are updated issues that happen **
+
+
+## Notes
+###These are continual notes since there are updated issues that happen 
+  *********************************************
+- in <code>todo.service.spec.ts</code>
     <code>
-    import { TestBed, async, inject } from '@angular/core/testing';
-    import  { Todo } from './todo';
-    import { TodoService } from './todo.service';
+        import { TestBed, async, inject } from '@angular/core/testing';
     </code>
+- instead of 
+    <code> import {
+            beforeEach, beforeEachProviders,
+            describe, xdescribe,
+            expect, it, xit,
+            async, inject
+            } from '@angular/core/testing';
+    </code>
+- <code>TestBed</code> is supposed to replace what is above
+- still checking tests
+
 
 
 ## Development server

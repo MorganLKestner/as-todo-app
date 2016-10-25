@@ -60,7 +60,7 @@ describe('Service: Todo', () => {
 
   describe('#updateTodoById(id, values)', () => {
 
-    it('should return todo with the corresponding id and updated data', injec([TodoService], (service: TodoService) =>{
+    it('should return todo with the corresponding id and updated data', inject([TodoService], (service: TodoService) =>{
       let todo = new Todo({title: 'Hello 1', complete: false});
       service.addTodo(todo);
       let updatedTodo = service.updateTodoById(1, {
